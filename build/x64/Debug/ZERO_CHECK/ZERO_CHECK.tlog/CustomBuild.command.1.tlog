@@ -1,0 +1,10 @@
+^E:\FLOIDSENSE\MAIN\BUILD\CMAKEFILES\074F20ECA0F351918CA21B26EB3025EB\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/floidsense/main -BE:/floidsense/main/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/floidsense/main/build/floidsense.slnx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
